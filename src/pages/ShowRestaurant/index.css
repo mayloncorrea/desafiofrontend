@@ -1,0 +1,145 @@
+
+.container-restaurant {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.header-show-restaurant {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url("../../assets/img/restaurant-header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%);
+}
+
+.button-to-return {
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    align-items: center;
+    position: absolute;
+    left: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-to-return img {
+    width: 35px;
+}
+
+.header-show-restaurant .content-header {
+    display: flex;
+    align-items: center;
+}
+
+.header-show-restaurant .content-header .image-cropper {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 30px;
+    z-index: 100;
+    border: solid 3px white;
+}
+
+.header-show-restaurant .content-header .image-cropper img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.content-header .info-restaurant h1 {
+    margin-bottom: 15px;
+}
+
+.main-show-restaurant .restaurant-details {
+    padding-top: 30px;
+}
+
+.info-details-mobile {
+    display: none;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.main-show-restaurant .restaurant-details .contact {
+    display: none;
+}
+
+.main-show-restaurant .restaurant-details .item {
+    margin-bottom: 20px;
+}
+
+.main-show-restaurant .restaurant-details .item h4{
+    margin-bottom: 5px;
+}
+
+.main-show-restaurant .restaurant-details .description p {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+    .container-restaurant {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    
+    .button-to-return {
+        left: 35px;
+    }
+
+    .button-to-return span{
+        display: none;
+    }
+
+    .header-show-restaurant .content-header .image-cropper {
+        width: 140px;
+        height: 140px;
+    }
+
+    .header-show-restaurant .content-header .below-image-cropper {
+        height: 30px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 156px;
+        border-radius: 32px 32px 0px 0px;
+    }
+
+    .container-restaurant {
+        width: unset;
+    }
+
+    .content-header .info-restaurant {
+        display: none;
+    }
+
+    .header-show-restaurant .content-header {
+        justify-content: center;
+    }
+
+    .header-show-restaurant {
+        padding-bottom: 0px;
+    }
+
+    .main-show-restaurant .info-details-mobile {
+        display: block;
+    }
+
+    .main-show-restaurant .restaurant-details .description p {
+        font-size: 14px;
+    }
+
+    .main-show-restaurant .restaurant-details .contact {
+        display: block;
+    }
+}
